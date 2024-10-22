@@ -1,7 +1,7 @@
 function Debitcard() {
   return (
     <div>
-      <h1>Dabit Card with new things </h1>
+      <h1>Dabit Card with new </h1>
     </div>
   );
 }
