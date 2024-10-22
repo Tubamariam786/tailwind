@@ -1,9 +1,9 @@
-
-
 function Debitcard() {
   return (
-    <div>Debitcard</div>
-  )
+    <div>
+      <h1>Dabit Card </h1>
+    </div>
+  );
 }
 
-export default Debitcard
+export default Debitcard;
