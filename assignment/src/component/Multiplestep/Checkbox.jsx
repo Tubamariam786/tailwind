@@ -4,16 +4,17 @@ import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Formik from "./Formik";
+import Typography from "@mui/material/Typography"; 
+import Formik from "./Formik"; 
+import Debitcard from "./Debitcard"; 
 
 const steps = ["Shopping Info", "Payment Detail", "Review Order"];
 
 export default function Checkboxcd() {
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = React.useState(0); 
 
   const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    setActiveStep((prevActiveStep) => prevActiveStep + 1); 
   };
 
   const handleBack = () => {
@@ -39,11 +40,11 @@ export default function Checkboxcd() {
         <>
           <Typography sx={{ mt: 2, mb: 1 }}>
             {activeStep === 0 ? (
-              <Formik />
+              <Formik /> 
             ) : activeStep === 1 ? (
-              "Payment Detail Content"
+              <Debitcard /> 
             ) : (
-              "Review Order Content"
+              "Review Order Content" // Render content for step 2
             )}
           </Typography>
           <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
