@@ -38,7 +38,13 @@ export default function Checkboxcd() {
       ) : (
         <>
           <Typography sx={{ mt: 2, mb: 1 }}>
-            {activeStep === 0 ? <Formik /> : activeStep === 1 ? "Payment Detail Content" : "Review Order Content"}
+            {activeStep === 0 ? (
+              <Formik />
+            ) : activeStep === 1 ? (
+              "Payment Detail Content"
+            ) : (
+              "Review Order Content"
+            )}
           </Typography>
           <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
             <Button
